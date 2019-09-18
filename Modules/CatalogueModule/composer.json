@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/cataloguemodule",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\CatalogueModule\\Providers\\CatalogueModuleServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\CatalogueModule\\": ""
+        }
+    }
+}
