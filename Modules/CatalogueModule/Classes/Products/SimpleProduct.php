@@ -4,7 +4,8 @@ namespace Modules\CatalogueModule\Classes\Products;
 use Illuminate\Http\Request;
 
 Class SimpleProduct{
-
+     
+     public $ProductId;
      public $ProductName;
      public $ProductPrice;
      public $ProductCategory;
@@ -17,6 +18,11 @@ Class SimpleProduct{
      public $ProductSKU;
      public $ProductBrand;
      public $ProductManufacturer;
+     public $ProductImage1;
+     public $ProductImage2;
+     public $ProductImage3;
+     public $ProductImage4;
+
 
   public function __construct(Request $data){
     echo "\n I m here in simple product class";

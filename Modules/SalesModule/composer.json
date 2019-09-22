@@ -21,5 +21,8 @@
         "psr-4": {
             "Modules\\SalesModule\\": ""
         }
+    },
+    "require": {
+        "vanilo/order": "^0.5.2"
     }
 }

@@ -1,0 +1,34 @@
+{
+    "name": "vanilo/support",
+    "description": "Common Vanilo functions, traits, helpers",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["ecommerce", "laravel", "vanilo", "artkonekt"],
+    "support": {
+        "source": "https://github.com/vanilophp/support"
+    },
+    "authors": [
+        {
+            "name": "Attila Fulop",
+            "homepage": "https://github.com/fulopattila122"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vanilo\\Support\\": "src/",
+            "Vanilo\\Support\\Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+        "spatie/laravel-medialibrary": "Allows associating images (or other files) with Eloquent models"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.5.x-dev"
+        }
+    }
+}

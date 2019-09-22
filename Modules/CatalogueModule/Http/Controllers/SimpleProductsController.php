@@ -48,8 +48,8 @@ class SimpleProductsController extends Controller
         $newProduct->ProductPriceList = $Product->ProductPriceList;
         $newProduct->ProductMeasureUnit = $Product->ProductMeasureUnit;
         $newProduct->ProductDescription = $Product->ProductDescription;
-        $newProduct->ProductProductionDate = $Product->ProductProductionDate;
-        $newProduct->ProductExpireyDate = $Product->ProductExpireyDate;
+        //$newProduct->ProductProductionDate = date("Y-m-d",$Product->ProductProductionDate);
+        //$newProduct->ProductExpireyDate = date("Y-m-d",strtotime($Product->ProductExpireyDate));
         $newProduct->ProductSKU = $Product->ProductSKU;
         $newProduct->ProductBrand = $Product->ProductBrand;
         $newProduct->ProductManufacturer = $Product->ProductManufacturer;
@@ -95,5 +95,12 @@ class SimpleProductsController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function dateFormat($date){
+
+        $dateReformated = $date;
+        return $dateReformated;
+
     }
 }
